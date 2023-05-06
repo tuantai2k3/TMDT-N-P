@@ -1,182 +1,298 @@
-body {
-	font-family: Arial, sans-serif;
-    background-color: #fffde7;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #ffd700;
-  }
-  a {
-    color: #ffd700;
-  }
-  /* màu nền là trắng */
-  section, article {
-    background-color: #ffffff;
-  }
-
- nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-}
- nav li {
-	float: left;
-}
- nav a {
-	display: block;
-	padding: 10px;
-	color: #fff;
-	text-decoration: none;
-}
- nav a:hover {
-	background-color: #666;
-}
- section {
-	width: 80%;
-	margin: auto;
-}
- h2 {
-	font-size: 2em;
-}
- h3 {
-	font-size: 1.5em;
-}
- p {
-	line-height: 1.5em;
-}
-/* Khung 960 */
-.container_12 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 960px;
-  }
-   /* Xoá các margin và padding mặc định của các phần tử */
-  body, header, nav, section, article, aside, footer {
-    margin: 0;
-    padding: 0;
-  }
-   /* Trang trí cho các phần tử cơ bản */
-  header {
-    background-color: #000000;
-    color: #fff;
-    padding: 20px;
-  }
-   nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-   nav li {
-    float: left;
-  }
-   nav a {
-    display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-  }
-   nav a:hover {
-    background-color: #666;
-  }
-   section {
-    width: 101%;
-    margin: 20px 0;
-    overflow: hidden;
-  }
-   h2 {
-    font-size: 2em;
-  }
-   p {
-    line-height: 1.5em;
-  }
-   /* Trang trí cho sản phẩm */
-  .product {
-    float: left;
-    margin: 0 20px 20px 0;
-    width: 298px;
-    height: 430px;
-    border: 1px solid #ccc;
-    overflow: hidden;
-  }
-   .product img {
-    width: 100%;
-    height: 298px;
-  }
-   .product h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
-  }
-   .product p {
-    font-size: 1.2em;
-    margin: 10px 0;
-  }
-   .product button {
-    display: block;
-    margin: 10px auto 0;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  /*CSS NÚT ĐĂNG KÍ ĐĂNG NHẬP*/
-  .login-register {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-  }
-   .login-register button {
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin-left: 10px;
-      cursor: pointer;
-  }
-   .login-register .register {
-      background-color: #008CBA;
-  }
-  /* Định dạng phần footer */
-footer {
-  background-color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Định dạng văn bản trong footer */
-footer p {
-  font-size: 16px;
-  color: #666666;
-}
-
-/* Hiệu ứng hover cho văn bản */
-footer p:hover {
-  color: #ff0000;
-  cursor: pointer;
-}
-
-/* Hiệu ứng động cho văn bản */
-footer p {
-  position: relative;
-}
-
-footer p::before {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: -5px;
-  left: 0;
-  background-color: #ff0000;
-  transition: width 0.3s ease;
-}
-
-footer p:hover::before {
-  width: 100%;
-}
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #fffde7;
+    }
+    
+     :root {
+        --main-color: darkorange;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: var(--main-color);
+    }
+    /* màu nền là trắng */
+    /* search */
+    
+    .titibeas2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .box {
+        height: 60px;
+        background-color: darkcyan;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .kkie12 {
+        background: none;
+        outline: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        width: 0px;
+        transition: 0.8s ease;
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .kkie12::placeholder {
+        color: antiquewhite;
+    }
+    
+    .audu12 {
+        color: whitesmoke;
+        text-align: center;
+        width: 60px;
+        font-size: 18px;
+    }
+    
+    .box:hover input {
+        width: 200px;
+        margin: 0 20px;
+        border-bottom: 2px solid red;
+    }
+    
+    .kkie12:focus {
+        width: 200px;
+        margin: 0 20px;
+        border-bottom: 2px solid red;
+    }
+    /* search */
+    /* tiêu đề dưới */
+    
+    .hi123as {
+        font-size: 50px;
+        color: white;
+        text-transform: uppercase;
+        padding: 20px;
+    }
+    /* header */
+    
+    header {
+        background-color: darkorange;
+        color: #fff;
+    }
+    
+    .content {
+        text-align: center;
+        background-image: url('image/logo.png');
+        color: #333;
+        font-size: 40px;
+        height: 960px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50% 50%;
+    }
+    
+    section,
+    article {
+        background-color: #ffffff;
+    }
+    /* navigation */
+    
+    #nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    #nav>li {
+        display: inline-block;
+    }
+    
+    #nav .subnav li {
+        position: relative;
+        list-style-type: none;
+    }
+    
+    #nav .subnav {
+        display: none;
+        position: absolute;
+        background-color: #000;
+        padding: 0;
+    }
+    
+    #nav li a {
+        line-height: 46px;
+    }
+    
+    #nav li:hover .subnav {
+        display: block;
+    }
+    
+    #nav a {
+        display: block;
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    #nav a:hover {
+        background-color: #666;
+    }
+    
+    section {
+        width: 80%;
+        margin: auto;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    p {
+        line-height: 1.5em;
+    }
+    /* Khung 960 */
+    
+    .container_12 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 960px;
+    }
+    /* Xoá các margin và padding mặc định của các phần tử */
+    
+    body,
+    header,
+    nav,
+    section,
+    article,
+    aside,
+    footer {
+        margin: 0;
+        padding: 0;
+    }
+    /* Trang trí cho các phần tử cơ bản */
+    
+    section {
+        width: 101%;
+        margin: 20px 0;
+        overflow: hidden;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    p {
+        line-height: 1.5em;
+    }
+    /* Trang trí cho sản phẩm */
+    
+    .product {
+        float: left;
+        margin: 0 20px 20px 0;
+        width: 298px;
+        height: 430px;
+        border: 1px solid #ccc;
+        overflow: hidden;
+    }
+    
+    .product img {
+        width: 100%;
+        height: 298px;
+    }
+    
+    .product h3 {
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+    
+    .product p {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+    
+    .product button {
+        display: block;
+        margin: 10px auto 0;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    /*CSS NÚT ĐĂNG KÍ ĐĂNG NHẬP*/
+    
+    .login-register {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .login-register button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    
+    .login-register .register {
+        background-color: #008CBA;
+    }
+    /* Định dạng phần footer */
+    
+    footer {
+        background-color: #f2f2f2;
+        padding: 20px;
+        text-align: center;
+    }
+    /* Định dạng văn bản trong footer */
+    
+    footer p {
+        font-size: 16px;
+        color: #666666;
+    }
+    /* Hiệu ứng hover cho văn bản */
+    
+    footer p:hover {
+        color: #ff0000;
+        cursor: pointer;
+    }
+    /* Hiệu ứng động cho văn bản */
+    
+    footer p {
+        position: relative;
+    }
+    
+    footer p::before {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: #ff0000;
+        transition: width 0.3s ease;
+    }
+    
+    footer p:hover::before {
+        width: 100%;
+    }
