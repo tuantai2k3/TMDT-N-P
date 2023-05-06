@@ -4,7 +4,6 @@
     
     body {
         font-family: Arial, sans-serif;
-        background-color: #fffde7;
     }
     
      :root {
@@ -90,11 +89,11 @@
     
     .content {
         text-align: center;
-        background-image: url('image/logo.png');
-        color: #333;
         font-size: 40px;
         height: 960px;
         width: 100%;
+        background-image: url('image/background\ chinh\ thuc.jpg');
+        color: #333;
         background-repeat: no-repeat;
         background-size: contain;
         background-position: 50% 50%;
@@ -105,6 +104,11 @@
         background-color: #ffffff;
     }
     /* navigation */
+    
+    .head {
+        background-color: #473b3b;
+        position: relative;
+    }
     
     #nav {
         list-style: none;
@@ -125,8 +129,17 @@
     #nav .subnav {
         display: none;
         position: absolute;
-        background-color: #000;
+        background-color: #a2bcc2;
         padding: 0;
+    }
+    
+    #nav .subnav a {
+        color: #333;
+    }
+    
+    #nav .subnav a:hover {
+        background-color: #1c18d1;
+        color: rgb(179, 229, 238);
     }
     
     #nav li a {
@@ -139,8 +152,8 @@
     
     #nav a {
         display: block;
-        padding: 10px;
-        color: #fff;
+        padding: 5px;
+        color: rgb(96, 222, 231);
         text-decoration: none;
     }
     
@@ -239,10 +252,19 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        float: right;
     }
     
-    .login-register button {
-        background-color: #4CAF50;
+    .login {
+        width: 150px;
+        height: 50px;
+        margin-right: 60px;
+        color: #fffde7;
+        border-radius: 10px;
+    }
+    
+    .login-register .login {
+        background-color: #4c98af;
         color: white;
         border: none;
         padding: 10px 20px;
@@ -254,8 +276,13 @@
         cursor: pointer;
     }
     
-    .login-register .register {
-        background-color: #008CBA;
+    .login-register .login:hover {
+        background-color: rgb(209, 17, 17);
+        transition: 2000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    
+    .login-register .login:active {
+        background-color: rgb(95, 88, 88);
     }
     /* Định dạng phần footer */
     
