@@ -1,0 +1,210 @@
+css
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ .container_12 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+ header {
+  grid-column: span 3;
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 20px 0;
+}
+ header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #333;
+}
+ section {
+  grid-column: span 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ section h2 {
+  font-size: 2em;
+  color: #333;
+  width: 100%;
+  text-align: center;
+  margin: 40px 0;
+}
+ .product {
+  width: 200px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+}
+ .product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+ .product h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+ .product p {
+  font-size: 1em;
+  margin: 10px 0;
+}
+ .product button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 10px 0;
+  cursor:pointer;
+  border-radius: 5px;
+}
+ footer {
+  grid-column: span 3;
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+ footer p {
+  margin: 0;
+}
+ footer ul {
+  list-style: none;
+  padding: 0;
+}
+ footer li {
+  margin: 5px 0;
+}
+ footer a {
+  text-decoration: none;
+  color: #1a73e8;
+}
+ footer a:hover {
+  text-decoration: underline;
+}
+  /* Định dạng phần footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Định dạng văn bản trong footer */
+footer p {
+  font-size: 16px;
+  color: #666666;
+}
+
+/* Hiệu ứng hover cho văn bản */
+footer p:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
+
+/* Hiệu ứng động cho văn bản */
+footer p {
+  position: relative;
+}
+
+footer p::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #ff0000;
+  transition: width 0.3s ease;
+}
+
+footer p:hover::before {
+  width: 100%;
+}
+#contact {
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+ #contact h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+ #contact form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+ #contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+ #contact textarea {
+  resize: none;
+  height: 100px;
+}
+ #contact button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ #contact button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 50px;
+  background-color: #ff9409;
+  color: #333;
+}
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+header ul li {
+  margin-right: 20px;
+}
+header ul li:last-of-type {
+  margin-right: 0;
+}
+header ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+header ul li a:hover {
+  background-color: #F08080;
+  color: #fff;
+}
