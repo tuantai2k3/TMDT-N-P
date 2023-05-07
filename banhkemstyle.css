@@ -1,210 +1,394 @@
-css
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
- .container_12 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  padding: 20px;
+
+.container_12 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
- header {
-  grid-column: span 3;
-  text-align: center;
-  background-color: #f8f8f8;
-  padding: 20px 0;
+
+header {
+    grid-column: span 3;
+    text-align: center;
+    background-color: #f8f8f8;
 }
- header h1 {
-  font-size: 2.5em;
-  margin: 0;
-  color: #333;
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #333;
 }
- section {
-  grid-column: span 3;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+
+section {
+    grid-column: span 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
- section h2 {
-  font-size: 2em;
-  color: #333;
-  width: 100%;
-  text-align: center;
-  margin: 40px 0;
+
+section h2 {
+    font-size: 2em;
+    color: #333;
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
 }
- .product {
-  width: 200px;
-  padding: 10px;
-  background-color: #f8f8f8;
-  border-radius: 5px;
-  margin: 5px;
-  text-align: center;
+
+
+/*  */
+
+.hi123as {
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
 }
- .product img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
+
+
+/* icon liên hệ */
+
+.icons-click {
+    font-size: 30px;
+    line-height: 60px;
+    padding-left: 30px;
 }
- .product h3 {
-  font-size: 1.2em;
-  margin: 10px 0;
+
+.icons-click>a {
+    text-decoration: none;
 }
- .product p {
-  font-size: 1em;
-  margin: 10px 0;
+
+.icons2 {
+    font-size: 20px;
+    color: #fff;
 }
- .product button {
-  background-color: #4caf50;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1em;
-  margin: 10px 0;
-  cursor:pointer;
-  border-radius: 5px;
+
+.icons {
+    color: white;
 }
- footer {
-  grid-column: span 3;
-  background-color: #f8f8f8;
-  padding: 20px;
-  text-align: center;
+
+
+/* search */
+
+.titibeas2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkorange;
+    padding: 0;
 }
- footer p {
-  margin: 0;
+
+.box {
+    height: 60px;
+    background-color: darkcyan;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
- footer ul {
-  list-style: none;
-  padding: 0;
+
+.kkie12 {
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 0px;
+    transition: 0.8s ease;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
 }
- footer li {
-  margin: 5px 0;
+
+.kkie12::placeholder {
+    color: antiquewhite;
 }
- footer a {
-  text-decoration: none;
-  color: #1a73e8;
+
+.audu12 {
+    color: whitesmoke;
+    text-align: center;
+    width: 60px;
+    font-size: 18px;
 }
- footer a:hover {
-  text-decoration: underline;
+
+.box:hover input {
+    width: 200px;
+    margin: 0 20px;
+    border-bottom: 2px solid red;
 }
-  /* Định dạng phần footer */
+
+.kkie12:focus {
+    width: 200px;
+    margin: 0 20px;
+    border-bottom: 2px solid red;
+}
+
+
+/* tiêu đề thẻ h1 có a */
+
+.head {
+    background-color: #473b3b;
+    display: flex;
+}
+
+#nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav .subnav li {
+    position: relative;
+    list-style-type: none;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #a2bcc2;
+    padding: 0;
+}
+
+#nav .subnav a {
+    color: #333;
+}
+
+#nav .subnav a:hover {
+    background-color: #1c18d1;
+    color: rgb(179, 229, 238);
+}
+
+#nav li a {
+    line-height: 46px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav a {
+    display: block;
+    padding: 5px;
+    color: rgb(96, 222, 231);
+    text-decoration: none;
+}
+
+#nav a:hover {
+    background-color: #666;
+}
+
+
+/* đăng ký đăng nhập */
+
+.login-register {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    float: right;
+    padding-left: 30px;
+}
+
+.login {
+    width: 150px;
+    height: 50px;
+    margin-right: 60px;
+    color: #fffde7;
+    border-radius: 10px;
+}
+
+.login-register .login {
+    background-color: #4c98af;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.login-register .login:hover {
+    background-color: rgb(209, 17, 17);
+    transition: 2000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.login-register .login:active {
+    background-color: rgb(95, 88, 88);
+}
+
+
+/* nav trên */
+
+.product {
+    width: 200px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.product button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 footer {
-  background-color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
+    grid-column: span 3;
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
 }
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 5px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #1a73e8;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Định dạng phần footer */
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
 
 /* Định dạng văn bản trong footer */
+
 footer p {
-  font-size: 16px;
-  color: #666666;
+    font-size: 16px;
+    color: #666666;
 }
+
 
 /* Hiệu ứng hover cho văn bản */
+
 footer p:hover {
-  color: #ff0000;
-  cursor: pointer;
+    color: #ff0000;
+    cursor: pointer;
 }
 
+
 /* Hiệu ứng động cho văn bản */
+
 footer p {
-  position: relative;
+    position: relative;
 }
 
 footer p::before {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: -5px;
-  left: 0;
-  background-color: #ff0000;
-  transition: width 0.3s ease;
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ff0000;
+    transition: width 0.3s ease;
 }
 
 footer p:hover::before {
-  width: 100%;
+    width: 100%;
 }
+
 #contact {
-  background-color: #f2f2f2;
-  padding: 50px;
+    background-color: #f2f2f2;
+    padding: 50px;
 }
- #contact h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
 }
- #contact form label {
-  display: block;
-  font-size: 18px;
-  margin-bottom: 10px;
+
+#contact form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
- #contact input[type="text"],
+
+#contact input[type="text"],
 #contact input[type="email"],
 #contact textarea {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
- #contact textarea {
-  resize: none;
-  height: 100px;
+
+#contact textarea {
+    resize: none;
+    height: 100px;
 }
- #contact button[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+
+#contact button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
- #contact button[type="submit"]:hover {
-  background-color: #3e8e41;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
-  padding: 0 50px;
-  background-color: #ff9409;
-  color: #333;
-}
-header h1 {
-  font-size: 36px;
-  margin: 0;
-}
-header ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  height: 100%;
-  align-items: center;
-}
-header ul li {
-  margin-right: 20px;
-}
-header ul li:last-of-type {
-  margin-right: 0;
-}
-header ul li a {
-  color: #333;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 0 10px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  transition: background-color 0.3s ease;
-}
-header ul li a:hover {
-  background-color: #F08080;
-  color: #fff;
+
+#contact button[type="submit"]:hover {
+    background-color: #3e8e41;
 }
