@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Queen Cake BMT </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="grid_12">
+        <!-- search -->
+        <div class="titibeas2">
+            <h1 class="hi123as">
+                Bánh Kem queencake </h1>
+            <div class="box">
+                <input class="kkie12" type="search" placeholder="Search here">
+                <a class="audu12"><i class="fas fa-search-location"></i></a>
+            </div>
+        </div>
+
+        <div class="head">
+
+            <ul id="nav">
+                <li><a href="code.html"><i class="fa-solid fa-house"></i> Trang Chủ</a></li>
+                <li><a href="#">Lịch Sử Ra Đời</a></li>
+                <li><a href="#">Dịch Vụ Mâm Cúng Thôi Nôi</a></li>
+                <li><a href="#">Dịch Vụ Dạy Nghề</a></li>
+                <li><a href="#">Menu Queencake</a>
+                    <ul class="subnav">
+                        <li><a href="banhkem.html">Bánh Kem</a></li>
+                        <li><a href="#">Rau cau</a></li>
+                        <li><a href="#">Bông lan trứng muối</a></li>
+                        <li><a href="#">Tiramisu</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- icons thông tin liên hệ và giỏ hàng-->
+            <div class="icons-click"> <a class="icons" href="https://www.facebook.com/QueenCake121Ywang"><i class="fa-brands fa-facebook"></i></a></div>
+            <div class="icons-click"> <a class="icons" href="mailto:tuantai2k3bmt@gmail.com"><i class="fa-solid fa-envelope"></i></a></div>
+            <div class="icons-click"> <a class="icons2" href=""><i class="fa-solid fa-phone"></i> 0773449913</a></div>
+            <div class="icons-click"> <a class="icons" href=""><i class="fa-solid fa-basket-shopping"></i></i></a></div>
+
+
+            <!--Nút đăng nhập-đăng kí-->
+            <div class="login-register">
+                <button class="login" type="submit"><i class="fa-solid fa-user"></i>  Đăng nhập / Đăng Ký</button>
+            </div>
+        </div>
+
+
+
+
+    </header>
+
+    <div class="content">
+
+    </div>
+  
+
+        <footer>
+            <p>Liên hệ với chúng tôi qua:</p>
+            <ul>
+                <li>Email: tuantai2k3bmt@gmail.com</li>
+                <li>Facebook: <a href="https://www.facebook.com/QueenCake121Ywang">TIỆM BÁNH QUEEN CAKE BUÔN MA THUỘT</a></li>
+                <li>Instagram: <a href="https://www.instagram.com/company/">_Tuantai2k3</a></li>
+                <p style="text-align:center; margin-top:10px;">&copy; Lê Nguyên Vũ & Thái Tuấn Tài.</p>
+            </ul>
+            <p>Chúng tôi cam kết đem đến những sản phẩm tốt nhất cho khách hàng.</p>
+
+            <p>Xin cảm ơn quý khách đã ghé thăm trang web của chúng tôi!</p>
+        </footer>
+    </div>
+    <script>
+        const links = document.querySelectorAll('nav a');
+        links.forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                console.log(link.textContent);
+            });
+        });
+        let loginBtn = document.querySelector('.login-register .login');
+        let registerBtn = document.querySelector('.login-register .register');
+        loginBtn.addEventListener('click', function() {
+            window.location.href = 'login.html';
+        });
+        registerBtn.addEventListener('click', function() {
+            window.location.href = 'dangki.html';
+            
+        });
+    </script>
+</body>
+
+</html>
