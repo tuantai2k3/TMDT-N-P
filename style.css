@@ -197,55 +197,6 @@
             padding: 0;
         }
         /* Trang trí cho các phần tử cơ bản */
-        
-        section {
-            width: 101%;
-            margin: 20px 0;
-            overflow: hidden;
-        }
-        
-        h2 {
-            font-size: 2em;
-        }
-        
-        p {
-            line-height: 1.5em;
-        }
-        /* Trang trí cho sản phẩm */
-        
-        .product {
-            float: left;
-            margin: 0 20px 20px 0;
-            width: 298px;
-            height: 430px;
-            border: 1px solid #ccc;
-            overflow: hidden;
-        }
-        
-        .product img {
-            width: 100%;
-            height: 298px;
-        }
-        
-        .product h3 {
-            font-size: 1.5em;
-            margin: 10px 0;
-        }
-        
-        .product p {
-            font-size: 1.2em;
-            margin: 10px 0;
-        }
-        
-        .product button {
-            display: block;
-            margin: 10px auto 0;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
         /*CSS NÚT ĐĂNG KÍ ĐĂNG NHẬP*/
         
         .login-register {
