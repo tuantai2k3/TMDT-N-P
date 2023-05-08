@@ -132,7 +132,15 @@ section h2 {
 }
 
 
-/* tiêu đề thẻ h1 có a */
+/* h2 */
+
+.tieudebanh {
+    color: darkorange;
+    font-size: 70px;
+}
+
+
+/* tiê  u đề thẻ h1 có a */
 
 .head {
     background-color: #473b3b;
